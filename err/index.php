@@ -3,8 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, internal-scale=1.0">
-	<title>URLCORN</title>
-	<link href="main.css" rel="stylesheet" type="text/css" media="all"/>
+	<?php
+		include './function.php';
+		echo "<title>URLCORN - ".read_file('./title')."</title>";
+	?>
+	<link href="../main.css" rel="stylesheet" type="text/css" media="all"/>
+	<style type="text/css">
+		#menu li {
+			padding: 0 0 0 0;
+		}
+		#menu li a {
+			font-size: 130%;
+		}
+	</style>
 </head>
 <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
 	<div id="header-wrapper">
@@ -17,26 +28,25 @@
 		</div>
 	</div>
 	<div id="menu-wrapper">
-			<div id="menu">
-				<ul>
-					<li><a href="#" title="로그인">로그인</a></li>
-					<li><a href="#" title="회원가입">회원가입</a></li>
-					<li><a href="#" title="가격표">가격표</a></li>
-					<li><a href="#" title="개발자 소개">개발자 소개</a></li>
-					<li><a href="#" title="도움말">도움말</a></li>
-				</ul>
-			</div>
+		<div id="menu">
+			<ul>
+				<li>
+					<a href="#">
+						<?php echo read_file('./title'); ?>
+					</a>	
+				</li>
+			</ul>
+		</div>
 	</div>
 	<div id="wrapper">
 		<div id="middle-wrapper">
 
 			<div id="middle" class="container">
 				<h2>
-					기획자의 말
+					<?php echo read_file('./title'); ?>
 				</h2>
 				<p>
-					This is the Test Message.<br>
-					이것은 실험적인 문자입니다.
+					<?php echo read_file('./code'); ?>
 				</p>
 			</div>
 

@@ -3,41 +3,46 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, internal-scale=1.0">
-	<title>URLCORN</title>
+	<title>URLCORN-login</title>
 	<link href="main.css" rel="stylesheet" type="text/css" media="all"/>
 </head>
 <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
 	<div id="header-wrapper">
 		<div id="header" class="container">
 			<div id="logo">
-				<h1><a>URLCORN</a></h1>
-				<h2><span>링크줄이기 서비스 <a>URLCORN</a></span></h2>
+				<h1><a>로그인</a></h1>
+				<h2><span>계정이 없으시다면? <a>회원가입</a></span></h2>
 			</div>
 			<div id="triangle"></div>
 		</div>
 	</div>
 	<div id="menu-wrapper">
-			<div id="menu">
-				<ul>
-					<li><a href="#" title="로그인">로그인</a></li>
-					<li><a href="#" title="회원가입">회원가입</a></li>
-					<li><a href="#" title="가격표">가격표</a></li>
-					<li><a href="#" title="개발자 소개">개발자 소개</a></li>
-					<li><a href="#" title="도움말">도움말</a></li>
-				</ul>
-			</div>
+		<ul>
+			<li>
+				<a href="index.html">
+					돌아가기
+				</a>
+			</li>
+		</ul>
 	</div>
 	<div id="wrapper">
 		<div id="middle-wrapper">
 
 			<div id="middle" class="container">
 				<h2>
-					기획자의 말
+					로그인
 				</h2>
-				<p>
-					This is the Test Message.<br>
-					이것은 실험적인 문자입니다.
-				</p>
+
+				<form method="POST" action="#">
+					<h3>
+						<input type="input" name="id" placeholder="아이디">
+					</h3>
+					<h3>
+						<input type="password" name="pw" placeholder="비밀번호">
+					</h3>
+					<input type="submit" value="로그인">
+				</form>
+
 			</div>
 
 		</div>
