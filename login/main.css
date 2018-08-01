@@ -237,7 +237,10 @@ a:hover
     background-color: #3D3D3D;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 118%;
+    font-family: "Do Hyeon", sans-serif;
+    letter-spacing: 1.2px;
+    padding: 0.9em 1.8em 0.9em 1.8em;
     border: none;
 	cursor: pointer;
     outline: none;
@@ -269,14 +272,9 @@ a:hover
 }
 .dropdown a:hover 
 {
-background-color: #f1f1f1
+	background-color: #f1f1f1;
 }
 .show 
 {
 	display:block;
 }
-
-
-
-
-	/* 내가 만든거니 뭐라하면 죽x버릴거양 헤헿 농담인거 알지? */
